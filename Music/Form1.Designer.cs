@@ -42,12 +42,14 @@ namespace Music
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.navApplyChanges = new System.Windows.Forms.Button();
+            this.txtDuration = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // navAdd
             // 
             this.navAdd.Location = new System.Drawing.Point(68, 390);
-            this.navAdd.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.navAdd.Margin = new System.Windows.Forms.Padding(1);
             this.navAdd.Name = "navAdd";
             this.navAdd.Size = new System.Drawing.Size(28, 28);
             this.navAdd.TabIndex = 0;
@@ -58,7 +60,7 @@ namespace Music
             // navLeft
             // 
             this.navLeft.Location = new System.Drawing.Point(165, 390);
-            this.navLeft.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.navLeft.Margin = new System.Windows.Forms.Padding(1);
             this.navLeft.Name = "navLeft";
             this.navLeft.Size = new System.Drawing.Size(28, 28);
             this.navLeft.TabIndex = 1;
@@ -69,7 +71,7 @@ namespace Music
             // navRight
             // 
             this.navRight.Location = new System.Drawing.Point(261, 390);
-            this.navRight.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.navRight.Margin = new System.Windows.Forms.Padding(1);
             this.navRight.Name = "navRight";
             this.navRight.Size = new System.Drawing.Size(28, 28);
             this.navRight.TabIndex = 2;
@@ -80,7 +82,7 @@ namespace Music
             // navDelete
             // 
             this.navDelete.Location = new System.Drawing.Point(357, 390);
-            this.navDelete.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.navDelete.Margin = new System.Windows.Forms.Padding(1);
             this.navDelete.Name = "navDelete";
             this.navDelete.Size = new System.Drawing.Size(28, 28);
             this.navDelete.TabIndex = 3;
@@ -91,31 +93,31 @@ namespace Music
             // txtSongTitle
             // 
             this.txtSongTitle.Location = new System.Drawing.Point(133, 43);
-            this.txtSongTitle.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.txtSongTitle.Margin = new System.Windows.Forms.Padding(1);
             this.txtSongTitle.Name = "txtSongTitle";
             this.txtSongTitle.Size = new System.Drawing.Size(342, 27);
             this.txtSongTitle.TabIndex = 4;
             // 
             // txtArtist
             // 
-            this.txtArtist.Location = new System.Drawing.Point(133, 84);
-            this.txtArtist.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.txtArtist.Location = new System.Drawing.Point(132, 167);
+            this.txtArtist.Margin = new System.Windows.Forms.Padding(1);
             this.txtArtist.Name = "txtArtist";
             this.txtArtist.Size = new System.Drawing.Size(342, 27);
             this.txtArtist.TabIndex = 5;
             // 
             // txtAlbum
             // 
-            this.txtAlbum.Location = new System.Drawing.Point(134, 131);
-            this.txtAlbum.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.txtAlbum.Location = new System.Drawing.Point(133, 214);
+            this.txtAlbum.Margin = new System.Windows.Forms.Padding(1);
             this.txtAlbum.Name = "txtAlbum";
             this.txtAlbum.Size = new System.Drawing.Size(342, 27);
             this.txtAlbum.TabIndex = 6;
             // 
             // txtGenre
             // 
-            this.txtGenre.Location = new System.Drawing.Point(134, 182);
-            this.txtGenre.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.txtGenre.Location = new System.Drawing.Point(133, 265);
+            this.txtGenre.Margin = new System.Windows.Forms.Padding(1);
             this.txtGenre.Name = "txtGenre";
             this.txtGenre.Size = new System.Drawing.Size(342, 27);
             this.txtGenre.TabIndex = 7;
@@ -133,7 +135,7 @@ namespace Music
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(23, 84);
+            this.label2.Location = new System.Drawing.Point(22, 167);
             this.label2.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 20);
@@ -143,7 +145,7 @@ namespace Music
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(23, 131);
+            this.label3.Location = new System.Drawing.Point(22, 214);
             this.label3.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(53, 20);
@@ -153,7 +155,7 @@ namespace Music
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(23, 182);
+            this.label4.Location = new System.Drawing.Point(22, 265);
             this.label4.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(48, 20);
@@ -162,8 +164,8 @@ namespace Music
             // 
             // navApplyChanges
             // 
-            this.navApplyChanges.Location = new System.Drawing.Point(333, 255);
-            this.navApplyChanges.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.navApplyChanges.Location = new System.Drawing.Point(332, 338);
+            this.navApplyChanges.Margin = new System.Windows.Forms.Padding(1);
             this.navApplyChanges.Name = "navApplyChanges";
             this.navApplyChanges.Size = new System.Drawing.Size(150, 28);
             this.navApplyChanges.TabIndex = 12;
@@ -171,11 +173,31 @@ namespace Music
             this.navApplyChanges.UseVisualStyleBackColor = true;
             this.navApplyChanges.Click += new System.EventHandler(this.navApplyChanges_Click);
             // 
+            // txtDuration
+            // 
+            this.txtDuration.Location = new System.Drawing.Point(133, 91);
+            this.txtDuration.Margin = new System.Windows.Forms.Padding(1);
+            this.txtDuration.Name = "txtDuration";
+            this.txtDuration.Size = new System.Drawing.Size(342, 27);
+            this.txtDuration.TabIndex = 13;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(23, 94);
+            this.label5.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(105, 20);
+            this.label5.TabIndex = 14;
+            this.label5.Text = "Song Duration";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(530, 477);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.txtDuration);
             this.Controls.Add(this.navApplyChanges);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -189,7 +211,7 @@ namespace Music
             this.Controls.Add(this.navRight);
             this.Controls.Add(this.navLeft);
             this.Controls.Add(this.navAdd);
-            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "Form1";
             this.Text = "Music Database";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
@@ -214,6 +236,8 @@ namespace Music
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button navApplyChanges;
+        private System.Windows.Forms.TextBox txtDuration;
+        private System.Windows.Forms.Label label5;
     }
 }
 

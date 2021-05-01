@@ -105,6 +105,7 @@ namespace Music
         private void updateUI()
         {
             txtSongTitle.Text = _currentSong.Title;
+            txtDuration.Text = _currentSong.Duration;
             txtArtist.Text = _currentSong.Artist.Name;
             txtAlbum.Text = _currentSong.Album.Title;
             txtGenre.Text = _currentSong.Genre.Title;
@@ -113,6 +114,7 @@ namespace Music
         private void updateCurrentSong()
         {
             _currentSong.Title = txtSongTitle.Text;
+            _currentSong.Duration = txtDuration.Text;
             _currentSong.Artist.Name = txtArtist.Text;
             _currentSong.Album.Title = txtAlbum.Text;
             _currentSong.Genre.Title = txtGenre.Text;
@@ -177,6 +179,8 @@ namespace Music
     {
         [JsonProperty("title")]
         public string Title { get; set; }
+        [JsonProperty("duration")]
+        public string Duration { get; set; }
         // working on containers in side of containers we could add arrays of items (lists) but not necessary now.
         [JsonProperty("artist")]
         public Artist Artist { get; set; }

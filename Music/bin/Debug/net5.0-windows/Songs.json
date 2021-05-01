@@ -1,15 +1,16 @@
 {
   "songs": [
     {
-      "title": "Boogie",
+      "title": null,
+      "duration": null,
       "artist": {
-        "name": ""
+        "name": null
       },
       "album": {
-        "title": ""
+        "title": null
       },
       "genre": {
-        "name": ""
+        "name": null
       }
     }
   ]
