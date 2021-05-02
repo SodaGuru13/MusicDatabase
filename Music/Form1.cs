@@ -41,13 +41,13 @@ namespace Music
 
             if (_songList.Songs.Count == 0)
             {
-                addSong();
+                AddSong();
             }
             else
             {
                 _currentSong = _songList.Songs.First();
             }
-            updateUI();
+            UpdateUI();
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
@@ -57,81 +57,81 @@ namespace Music
 
         private void NavAdd_Click(object sender, EventArgs e)
         {
-            addSong();
-            updateUI();
+            AddSong();
+            UpdateUI();
         }
 
-        private void addSong()
+        private void AddSong()
         {
             _currentSong = _songList.AddSong();
         }
 
-        private void navApplyChanges_Click(object sender, EventArgs e)
+        private void NavApplyChanges_Click(object sender, EventArgs e)
         {
-            updateCurrentSong();
+            UpdateCurrentSong();
         }
 
-        private void updateUI()
+        private void UpdateUI()
         {
             txtSongTitle.Text = _currentSong.Name;
             txtSongDescription.Text = _currentSong.Description;
             txtSongDuration.Text = _currentSong.Duration;
-            txtReleaseDate.Text = _currentSong.Creation;
-            txtArtist.Text = _currentSong.Artist.Name;
+            txtSongCreation.Text = _currentSong.Creation;
+            txtArtistName.Text = _currentSong.Artist.Name;
             txtArtistDescription.Text = _currentSong.Artist.Description;
-            txtBirthday.Text = _currentSong.Artist.Birthday;
-            txtDeath.Text = _currentSong.Artist.Deathday;
-            txtAlbum.Text = _currentSong.Album.Name;
+            txtArtistBirthday.Text = _currentSong.Artist.Birthday;
+            txtArtistDeath.Text = _currentSong.Artist.Deathday;
+            txtAlbumName.Text = _currentSong.Album.Name;
             txtAlbumDescription.Text = _currentSong.Album.Description;
             txtAlbumDuration.Text = _currentSong.Album.Duration;
             txtAlbumCreation.Text = _currentSong.Album.Creation;
-            txtGenre.Text = _currentSong.Genre.Name;
+            txtGenreName.Text = _currentSong.Genre.Name;
             txtGenreDescription.Text = _currentSong.Genre.Description;
-            txtInstrument.Text = _currentSong.Genre.Instrument;
-            txtCreation.Text = _currentSong.Genre.Creation;
+            txtGenreInstrument.Text = _currentSong.Genre.Instrument;
+            txtGenreCreation.Text = _currentSong.Genre.Creation;
         }
 
-        private void updateCurrentSong()
+        private void UpdateCurrentSong()
         {
             _currentSong.Name = txtSongTitle.Text;
             _currentSong.Description = txtSongDescription.Text;
             _currentSong.Duration = txtSongDuration.Text;
-            _currentSong.Creation = txtReleaseDate.Text;
-            _currentSong.Artist.Name = txtArtist.Text;
+            _currentSong.Creation = txtSongCreation.Text;
+            _currentSong.Artist.Name = txtArtistName.Text;
             _currentSong.Artist.Description = txtArtistDescription.Text;
-            _currentSong.Artist.Birthday = txtBirthday.Text;
-            _currentSong.Artist.Deathday = txtDeath.Text;
-            _currentSong.Album.Name = txtAlbum.Text;
+            _currentSong.Artist.Birthday = txtArtistBirthday.Text;
+            _currentSong.Artist.Deathday = txtArtistDeath.Text;
+            _currentSong.Album.Name = txtAlbumName.Text;
             _currentSong.Album.Description = txtAlbumDescription.Text;
             _currentSong.Album.Duration = txtAlbumDuration.Text;
             _currentSong.Album.Creation = txtAlbumCreation.Text;
-            _currentSong.Genre.Name = txtGenre.Text;
+            _currentSong.Genre.Name = txtGenreName.Text;
             _currentSong.Genre.Description = txtGenreDescription.Text;
-            _currentSong.Genre.Instrument = txtInstrument.Text;
-            _currentSong.Genre.Creation = txtCreation.Text;
+            _currentSong.Genre.Instrument = txtGenreInstrument.Text;
+            _currentSong.Genre.Creation = txtGenreCreation.Text;
         }
 
-        private void navLeft_Click(object sender, EventArgs e)
+        private void NavLeft_Click(object sender, EventArgs e)
         {
             var currentIndex = _songList.Songs.IndexOf(_currentSong);
             if(currentIndex > 0)
             {
                 _currentSong = _songList.Songs[currentIndex-1];
-                updateUI();
+                UpdateUI();
             }
         }
 
-        private void navRight_Click(object sender, EventArgs e)
+        private void NavRight_Click(object sender, EventArgs e)
         {
             var currentIndex = _songList.Songs.IndexOf(_currentSong);
             if (currentIndex < _songList.Songs.Count-1)
             {
                 _currentSong = _songList.Songs[currentIndex + 1];
-                updateUI();
+                UpdateUI();
             }
         }
 
-        private void navDelete_Click(object sender, EventArgs e)
+        private void NavDelete_Click(object sender, EventArgs e)
         {
             var currentIndex = _songList.Songs.IndexOf(_currentSong);
             _songList.Songs.Remove(_currentSong);
@@ -140,23 +140,12 @@ namespace Music
             else if(currentIndex-1 > -1)
                 _currentSong = _songList.Songs[currentIndex-1];
             else
-                addSong();
+                AddSong();
 
 
-            updateUI();
+            UpdateUI();
         }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void navCopySong_Click(object sender, EventArgs e)
+        private void NavCopySong_Click(object sender, EventArgs e)
         {
             _currentSong = new Song(_currentSong.Name, _currentSong.Description);
             _songList.Songs.Add(_currentSong);

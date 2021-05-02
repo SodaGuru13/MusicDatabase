@@ -1,27 +1,27 @@
 {
   "songs": [
     {
-      "name": null,
-      "description": null,
-      "duration": null,
-      "creation": null,
+      "name": "",
+      "description": "",
+      "duration": "",
+      "creation": "",
       "artist": {
-        "name": null,
-        "description": null,
-        "birthday": null,
-        "died": null
+        "name": "",
+        "description": "",
+        "birthday": "",
+        "died": ""
       },
       "album": {
-        "name": null,
-        "description": null,
-        "duration": null,
-        "creation": null
+        "name": "",
+        "description": "",
+        "duration": "",
+        "creation": ""
       },
       "genre": {
-        "name": null,
-        "description": null,
-        "instrument": null,
-        "creation": null
+        "name": "",
+        "description": "",
+        "instrument": "",
+        "creation": ""
       }
     }
   ]
