@@ -150,6 +150,37 @@ namespace Music
             _currentSong = new Song(_currentSong.Name, _currentSong.Description);
             _songList.Songs.Add(_currentSong);
         }
+
+        private void btnEstimateAlbumDuration_Click(object sender, EventArgs e)
+        {
+            int hours = 0;
+            int minutes = 0;
+            int seconds = 0;
+            UpdateCurrentSong();
+            var listofDurations = _songList.Songs.Where(p => p.Album.Name == _currentSong.Album.Name).Select(k => k.Duration);
+            foreach (var item in listofDurations)
+            {
+                string[] splitter = item.Split(":");
+                minutes += int.Parse(splitter[0]);
+                seconds += int.Parse(splitter[1]);
+                if (seconds > 60)
+                {
+                    minutes += seconds / 60;
+                    seconds = seconds % 60;
+                }
+                if(minutes > 60)
+                {
+                    hours += minutes / 60;
+                    minutes = minutes % 60;
+                }
+            }
+            txtAlbumDuration.Text = $"{hours.ToString("00")}:{minutes.ToString("00")}:{seconds.ToString("00")}";
+        }
+
+        private void txtAlbumName_TextChanged(object sender, EventArgs e)
+        {
+            btnEstimateAlbumDuration.Enabled = !string.IsNullOrWhiteSpace(txtAlbumName.Text);
+        }
     }
 
 }
