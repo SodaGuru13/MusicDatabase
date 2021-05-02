@@ -3,28 +3,23 @@ using System;
 
 namespace Music
 {
-    public class Song
+    public class Song : SongBase, IMegaBase
     {
-        [JsonProperty("title")]
-        public string Title { get; set; }
+        [JsonProperty("name")]
+        public string Name { get; set; }
         [JsonProperty("description")]
         public string Description { get; set; }
         [JsonProperty("duration")]
         public string Duration { get; set; }
         [JsonProperty("creation")]
-        public DateTime Creation { get; set; }
-        // working on containers in side of containers we could add arrays of items (lists) but not necessary now.
-        [JsonProperty("artist")]
-        public Artist Artist { get; set; }
-        [JsonProperty("album")]
-        public Album Album { get; set; }
-        [JsonProperty("genre")]
-        public Genre Genre { get; set; }
-        public Song()
+        public string Creation { get; set; }
+        public Song() : base()
         {
-            Artist = new Artist();
-            Album = new Album();
-            Genre = new Genre();
+        }
+        public Song(string name, string decription) : base()
+        {
+            Name = name;
+            Description = decription;
         }
     }
 }

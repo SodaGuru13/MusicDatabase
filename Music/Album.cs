@@ -3,15 +3,15 @@ using System;
 
 namespace Music
 {
-    public class Album
+    public class Album : IMegaBase
     {
-        [JsonProperty("title")]
-        public string Title { get; set; }
+        [JsonProperty("name")]
+        public string Name { get; set; }
         [JsonProperty("description")]
         public string Description { get; set; }
         [JsonProperty("duration")]
         public string Duration { get; set; }
         [JsonProperty("creation")]
-        public DateTime Creation { get; set; }
+        public string Creation { get; set; }
     }
 }
