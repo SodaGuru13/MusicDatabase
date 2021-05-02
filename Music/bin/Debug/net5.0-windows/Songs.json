@@ -2,15 +2,22 @@
   "songs": [
     {
       "title": null,
+      "description": null,
       "duration": null,
+      "creation": "0001-01-01T00:00:00",
       "artist": {
-        "name": null
+        "name": null,
+        "description": null
       },
       "album": {
-        "title": null
+        "title": null,
+        "description": null,
+        "duration": null,
+        "creation": "0001-01-01T00:00:00"
       },
       "genre": {
-        "name": null
+        "name": null,
+        "description": null
       }
     }
   ]
