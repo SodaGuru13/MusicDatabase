@@ -75,18 +75,40 @@ namespace Music
         {
             txtSongTitle.Text = _currentSong.Name;
             txtSongDescription.Text = _currentSong.Description;
+            txtSongDuration.Text = _currentSong.Duration;
+            txtReleaseDate.Text = _currentSong.Creation;
             txtArtist.Text = _currentSong.Artist.Name;
+            txtArtistDescription.Text = _currentSong.Artist.Description;
+            txtBirthday.Text = _currentSong.Artist.Birthday;
+            txtDeath.Text = _currentSong.Artist.Deathday;
             txtAlbum.Text = _currentSong.Album.Name;
+            txtAlbumDescription.Text = _currentSong.Album.Description;
+            txtAlbumDuration.Text = _currentSong.Album.Duration;
+            txtAlbumCreation.Text = _currentSong.Album.Creation;
             txtGenre.Text = _currentSong.Genre.Name;
+            txtGenreDescription.Text = _currentSong.Genre.Description;
+            txtInstrument.Text = _currentSong.Genre.Instrument;
+            txtCreation.Text = _currentSong.Genre.Creation;
         }
 
         private void updateCurrentSong()
         {
             _currentSong.Name = txtSongTitle.Text;
             _currentSong.Description = txtSongDescription.Text;
+            _currentSong.Duration = txtSongDuration.Text;
+            _currentSong.Creation = txtReleaseDate.Text;
             _currentSong.Artist.Name = txtArtist.Text;
+            _currentSong.Artist.Description = txtArtistDescription.Text;
+            _currentSong.Artist.Birthday = txtBirthday.Text;
+            _currentSong.Artist.Deathday = txtDeath.Text;
             _currentSong.Album.Name = txtAlbum.Text;
+            _currentSong.Album.Description = txtAlbumDescription.Text;
+            _currentSong.Album.Duration = txtAlbumDuration.Text;
+            _currentSong.Album.Creation = txtAlbumCreation.Text;
             _currentSong.Genre.Name = txtGenre.Text;
+            _currentSong.Genre.Description = txtGenreDescription.Text;
+            _currentSong.Genre.Instrument = txtInstrument.Text;
+            _currentSong.Genre.Creation = txtCreation.Text;
         }
 
         private void navLeft_Click(object sender, EventArgs e)

@@ -1,23 +1,27 @@
 {
   "songs": [
     {
-      "title": null,
+      "name": null,
       "description": null,
       "duration": null,
-      "creation": "0001-01-01T00:00:00",
+      "creation": null,
       "artist": {
         "name": null,
-        "description": null
+        "description": null,
+        "birthday": null,
+        "died": null
       },
       "album": {
-        "title": null,
+        "name": null,
         "description": null,
         "duration": null,
-        "creation": "0001-01-01T00:00:00"
+        "creation": null
       },
       "genre": {
         "name": null,
-        "description": null
+        "description": null,
+        "instrument": null,
+        "creation": null
       }
     }
   ]

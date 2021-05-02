@@ -46,13 +46,31 @@ namespace Music
             this.label1 = new System.Windows.Forms.Label();
             this.txtSongTitle = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.txtGenreDescription = new System.Windows.Forms.TextBox();
             this.txtGenre = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtArtist = new System.Windows.Forms.TextBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.navCopySong = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtInstrument = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtCreation = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txtArtistDescription = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txtBirthday = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.txtDeath = new System.Windows.Forms.TextBox();
+            this.txtAlbumDescription = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.txtAlbumDuration = new System.Windows.Forms.TextBox();
+            this.txtAlbumCreation = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -105,7 +123,7 @@ namespace Music
             // 
             // txtAlbum
             // 
-            this.txtAlbum.Location = new System.Drawing.Point(131, 45);
+            this.txtAlbum.Location = new System.Drawing.Point(143, 38);
             this.txtAlbum.Margin = new System.Windows.Forms.Padding(1);
             this.txtAlbum.Name = "txtAlbum";
             this.txtAlbum.Size = new System.Drawing.Size(342, 27);
@@ -114,7 +132,7 @@ namespace Music
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(20, 45);
+            this.label3.Location = new System.Drawing.Point(40, 45);
             this.label3.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(38, 20);
@@ -223,7 +241,13 @@ namespace Music
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.label10);
+            this.groupBox2.Controls.Add(this.label9);
+            this.groupBox2.Controls.Add(this.txtCreation);
+            this.groupBox2.Controls.Add(this.label8);
+            this.groupBox2.Controls.Add(this.txtInstrument);
             this.groupBox2.Controls.Add(this.label4);
+            this.groupBox2.Controls.Add(this.txtGenreDescription);
             this.groupBox2.Controls.Add(this.txtGenre);
             this.groupBox2.Location = new System.Drawing.Point(44, 319);
             this.groupBox2.Name = "groupBox2";
@@ -232,19 +256,37 @@ namespace Music
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Genre";
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(35, 94);
+            this.label8.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(85, 20);
+            this.label8.TabIndex = 28;
+            this.label8.Text = "Description";
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(15, 38);
+            this.label4.Location = new System.Drawing.Point(35, 41);
             this.label4.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(48, 20);
             this.label4.TabIndex = 13;
             this.label4.Text = "Genre";
             // 
+            // txtGenreDescription
+            // 
+            this.txtGenreDescription.Location = new System.Drawing.Point(145, 94);
+            this.txtGenreDescription.Margin = new System.Windows.Forms.Padding(1);
+            this.txtGenreDescription.Name = "txtGenreDescription";
+            this.txtGenreDescription.Size = new System.Drawing.Size(342, 27);
+            this.txtGenreDescription.TabIndex = 27;
+            // 
             // txtGenre
             // 
-            this.txtGenre.Location = new System.Drawing.Point(112, 38);
+            this.txtGenre.Location = new System.Drawing.Point(145, 38);
             this.txtGenre.Margin = new System.Windows.Forms.Padding(1);
             this.txtGenre.Name = "txtGenre";
             this.txtGenre.Size = new System.Drawing.Size(342, 27);
@@ -252,6 +294,12 @@ namespace Music
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.label13);
+            this.groupBox3.Controls.Add(this.txtDeath);
+            this.groupBox3.Controls.Add(this.label12);
+            this.groupBox3.Controls.Add(this.txtBirthday);
+            this.groupBox3.Controls.Add(this.label11);
+            this.groupBox3.Controls.Add(this.txtArtistDescription);
             this.groupBox3.Controls.Add(this.label2);
             this.groupBox3.Controls.Add(this.txtArtist);
             this.groupBox3.Location = new System.Drawing.Point(599, 37);
@@ -264,7 +312,7 @@ namespace Music
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(25, 38);
+            this.label2.Location = new System.Drawing.Point(40, 42);
             this.label2.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(49, 20);
@@ -273,7 +321,7 @@ namespace Music
             // 
             // txtArtist
             // 
-            this.txtArtist.Location = new System.Drawing.Point(94, 38);
+            this.txtArtist.Location = new System.Drawing.Point(143, 39);
             this.txtArtist.Margin = new System.Windows.Forms.Padding(1);
             this.txtArtist.Name = "txtArtist";
             this.txtArtist.Size = new System.Drawing.Size(342, 27);
@@ -281,6 +329,12 @@ namespace Music
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.txtAlbumCreation);
+            this.groupBox4.Controls.Add(this.label16);
+            this.groupBox4.Controls.Add(this.label15);
+            this.groupBox4.Controls.Add(this.txtAlbumDuration);
+            this.groupBox4.Controls.Add(this.txtAlbumDescription);
+            this.groupBox4.Controls.Add(this.label14);
             this.groupBox4.Controls.Add(this.txtAlbum);
             this.groupBox4.Controls.Add(this.label3);
             this.groupBox4.Location = new System.Drawing.Point(599, 319);
@@ -299,6 +353,150 @@ namespace Music
             this.navCopySong.Text = "Copy Song";
             this.navCopySong.UseVisualStyleBackColor = true;
             this.navCopySong.Click += new System.EventHandler(this.navCopySong_Click);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(35, 148);
+            this.label9.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(79, 20);
+            this.label9.TabIndex = 28;
+            this.label9.Text = "Instrument";
+            // 
+            // txtInstrument
+            // 
+            this.txtInstrument.Location = new System.Drawing.Point(145, 148);
+            this.txtInstrument.Margin = new System.Windows.Forms.Padding(1);
+            this.txtInstrument.Name = "txtInstrument";
+            this.txtInstrument.Size = new System.Drawing.Size(342, 27);
+            this.txtInstrument.TabIndex = 27;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(35, 197);
+            this.label10.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(65, 20);
+            this.label10.TabIndex = 28;
+            this.label10.Text = "Creation";
+            // 
+            // txtCreation
+            // 
+            this.txtCreation.Location = new System.Drawing.Point(145, 197);
+            this.txtCreation.Margin = new System.Windows.Forms.Padding(1);
+            this.txtCreation.Name = "txtCreation";
+            this.txtCreation.Size = new System.Drawing.Size(342, 27);
+            this.txtCreation.TabIndex = 27;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(40, 90);
+            this.label11.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(85, 20);
+            this.label11.TabIndex = 28;
+            this.label11.Text = "Description";
+            // 
+            // txtArtistDescription
+            // 
+            this.txtArtistDescription.Location = new System.Drawing.Point(143, 90);
+            this.txtArtistDescription.Margin = new System.Windows.Forms.Padding(1);
+            this.txtArtistDescription.Name = "txtArtistDescription";
+            this.txtArtistDescription.Size = new System.Drawing.Size(342, 27);
+            this.txtArtistDescription.TabIndex = 27;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(40, 138);
+            this.label12.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(64, 20);
+            this.label12.TabIndex = 28;
+            this.label12.Text = "Birthday";
+            // 
+            // txtBirthday
+            // 
+            this.txtBirthday.Location = new System.Drawing.Point(143, 138);
+            this.txtBirthday.Margin = new System.Windows.Forms.Padding(1);
+            this.txtBirthday.Name = "txtBirthday";
+            this.txtBirthday.Size = new System.Drawing.Size(342, 27);
+            this.txtBirthday.TabIndex = 27;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(44, 189);
+            this.label13.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(41, 20);
+            this.label13.TabIndex = 28;
+            this.label13.Text = "Died";
+            // 
+            // txtDeath
+            // 
+            this.txtDeath.Location = new System.Drawing.Point(143, 189);
+            this.txtDeath.Margin = new System.Windows.Forms.Padding(1);
+            this.txtDeath.Name = "txtDeath";
+            this.txtDeath.Size = new System.Drawing.Size(342, 27);
+            this.txtDeath.TabIndex = 27;
+            // 
+            // txtAlbumDescription
+            // 
+            this.txtAlbumDescription.Location = new System.Drawing.Point(143, 91);
+            this.txtAlbumDescription.Margin = new System.Windows.Forms.Padding(1);
+            this.txtAlbumDescription.Name = "txtAlbumDescription";
+            this.txtAlbumDescription.Size = new System.Drawing.Size(342, 27);
+            this.txtAlbumDescription.TabIndex = 11;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(40, 97);
+            this.label14.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(85, 20);
+            this.label14.TabIndex = 12;
+            this.label14.Text = "Description";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(44, 148);
+            this.label15.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(67, 20);
+            this.label15.TabIndex = 28;
+            this.label15.Text = "Duration";
+            // 
+            // txtAlbumDuration
+            // 
+            this.txtAlbumDuration.Location = new System.Drawing.Point(143, 148);
+            this.txtAlbumDuration.Margin = new System.Windows.Forms.Padding(1);
+            this.txtAlbumDuration.Name = "txtAlbumDuration";
+            this.txtAlbumDuration.Size = new System.Drawing.Size(342, 27);
+            this.txtAlbumDuration.TabIndex = 27;
+            // 
+            // txtAlbumCreation
+            // 
+            this.txtAlbumCreation.Location = new System.Drawing.Point(143, 194);
+            this.txtAlbumCreation.Margin = new System.Windows.Forms.Padding(1);
+            this.txtAlbumCreation.Name = "txtAlbumCreation";
+            this.txtAlbumCreation.Size = new System.Drawing.Size(342, 27);
+            this.txtAlbumCreation.TabIndex = 29;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(40, 200);
+            this.label16.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(65, 20);
+            this.label16.TabIndex = 30;
+            this.label16.Text = "Creation";
             // 
             // Form1
             // 
@@ -358,6 +556,24 @@ namespace Music
         private System.Windows.Forms.TextBox txtArtist;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Button navCopySong;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txtGenreDescription;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox txtInstrument;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox txtCreation;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox txtArtistDescription;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox txtBirthday;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox txtDeath;
+        private System.Windows.Forms.TextBox txtAlbumDescription;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox txtAlbumDuration;
+        private System.Windows.Forms.TextBox txtAlbumCreation;
+        private System.Windows.Forms.Label label16;
     }
 }
 

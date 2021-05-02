@@ -10,6 +10,8 @@ namespace Music
         public string Description { get; set; }
         [JsonProperty("instrument")]
         public string Instrument { get; set; }
+        [JsonProperty("creation")]
+        public string Creation { get; set; }
 
     }
 }
