@@ -129,7 +129,7 @@ namespace Music
             this.txtAlbumName.Name = "txtAlbumName";
             this.txtAlbumName.Size = new System.Drawing.Size(342, 27);
             this.txtAlbumName.TabIndex = 6;
-            this.txtAlbumName.TextChanged += new System.EventHandler(this.txtAlbumName_TextChanged);
+            this.txtAlbumName.TextChanged += new System.EventHandler(this.TxtAlbumName_TextChanged);
             // 
             // label3
             // 
@@ -454,7 +454,7 @@ namespace Music
             this.btnEstimateAlbumDuration.TabIndex = 31;
             this.btnEstimateAlbumDuration.Text = "Estimate";
             this.btnEstimateAlbumDuration.UseVisualStyleBackColor = true;
-            this.btnEstimateAlbumDuration.Click += new System.EventHandler(this.btnEstimateAlbumDuration_Click);
+            this.btnEstimateAlbumDuration.Click += new System.EventHandler(this.BtnEstimateAlbumDuration_Click);
             // 
             // txtAlbumCreation
             // 

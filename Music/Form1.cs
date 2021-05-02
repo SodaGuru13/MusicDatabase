@@ -151,7 +151,7 @@ namespace Music
             _songList.Songs.Add(_currentSong);
         }
 
-        private void btnEstimateAlbumDuration_Click(object sender, EventArgs e)
+        private void BtnEstimateAlbumDuration_Click(object sender, EventArgs e)
         {
             int hours = 0;
             int minutes = 0;
@@ -166,18 +166,18 @@ namespace Music
                 if (seconds > 60)
                 {
                     minutes += seconds / 60;
-                    seconds = seconds % 60;
+                    seconds %= 60;
                 }
                 if(minutes > 60)
                 {
                     hours += minutes / 60;
-                    minutes = minutes % 60;
+                    minutes %= 60;
                 }
             }
-            txtAlbumDuration.Text = $"{hours.ToString("00")}:{minutes.ToString("00")}:{seconds.ToString("00")}";
+            txtAlbumDuration.Text = $"{hours:00}:{minutes:00}:{seconds:00}";
         }
 
-        private void txtAlbumName_TextChanged(object sender, EventArgs e)
+        private void TxtAlbumName_TextChanged(object sender, EventArgs e)
         {
             btnEstimateAlbumDuration.Enabled = !string.IsNullOrWhiteSpace(txtAlbumName.Text);
         }
