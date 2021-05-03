@@ -16,10 +16,10 @@ namespace Music
         public Song() : base()
         {
         }
-        public Song(string name, string decription) : base()
+        public Song(string name, string description) : base()
         {
             Name = name;
-            Description = decription;
+            Description = description;
         }
     }
 }

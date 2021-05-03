@@ -310,9 +310,9 @@ namespace Music
             this.label4.Location = new System.Drawing.Point(35, 41);
             this.label4.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(48, 20);
+            this.label4.Size = new System.Drawing.Size(49, 20);
             this.label4.TabIndex = 13;
-            this.label4.Text = "Genre";
+            this.label4.Text = "Name";
             // 
             // txtGenreDescription
             // 
